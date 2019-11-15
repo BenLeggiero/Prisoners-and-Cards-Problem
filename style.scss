@@ -1,0 +1,67 @@
+---
+---
+
+$feint-grey-border-color: hsla(0, 0%, 50%, 0.2);
+$feint-grey-border: 1px solid $feint-grey-border-color;
+
+
+main {
+
+    h1 {
+        margin-block-start: 2em;
+        margin-block-end: 1ex;
+    }
+
+    #config-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin: 0;
+            padding: 0;
+        }
+
+        .config-input-line {
+            display: block;
+            margin: 1em 2em;
+        }
+    }
+
+
+    iframe {
+        &[src*=".youtube.com" i],
+        &[src*="//youtube.com" i] {
+            margin: 5em auto;
+            display: block;
+            box-shadow: var(--box-shadow-z12);
+        }
+    }
+
+
+    canvas {
+        border-radius: 4px;
+        border: $feint-grey-border;
+    }
+}
+
+
+
+.sidebar {
+    .avatar {
+        border-radius: 99in;
+        width: 140px;
+        display: block;
+        margin: 1em auto;
+        border: $feint-grey-border;
+    }
+}
+
+
+.ct-label {
+    color: currentColor;
+}
+
+line.ct-grid {
+    stroke: currentColor;
+}
